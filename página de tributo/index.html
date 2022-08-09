@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conoce a Maneskin</title>
+    <style>
+        html, body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: #f2d2ff;
+            color: #131313;
+            font-family: 'Roboto', sans-serif;
+            align-self: self-start;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #navigation-bar ul {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #000000;
+            background-color: #f3f3f3;
+        }
+
+        #navigation-bar li {
+            display: inline-block;
+        }
+
+        #navigation-bar li a {
+            display: block;
+            color: #665;
+            text-align: center;
+            padding: 20px 40px;
+            text-decoration: none;
+        }
+
+        #navigation-bar li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        #navigation-bar li a.active {
+            color: #fff;
+            background-color: #665;
+        }
+
+        #navigation-bar .menu__hamburger-icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            #navigation-bar li:not(:first-child) {
+                display: none;
+            }
+            #navigation-bar li.menu__hamburger-icon {
+                display: block;
+                float: right;
+            }
+            #navigation-bar.responsive {
+                position: relative;
+            }
+            #navigation-bar.responsive .menu__hamburger-icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            #navigation-bar.responsive .menu__hamburger-icon a {
+                color: #fff;
+            }
+            #navigation-bar.responsive li {
+                float: none;
+                display: block !important;
+            }
+            #navigation-bar.responsive li a{
+                text-align: left;
+            }
+        }
+
+        #main-content-container {
+            display: flex;
+        }
+
+        #links-sidebar {
+            flex;
+            background: #e6b5f5;
+            padding: 1em;
+        }
+
+        content {
+            flex: 6;
+            padding: 10px 20% 50px 20px;
+        }
+
+        .main-content__img--full-width {
+            width: 100%;
+        }
+
+        #footer {
+            padding: 0 20px 20px 20px;
+            margin-top: auto;
+            display: flex;
+            background: #afaeae;
+        }
+
+        .footer__section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .social__networks {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .social__network {
+            display: flex;
+            align-items: center;
+        }
+
+        .social__icon {
+            font-size: 32px;
+        }
+
+        .social__icon-handler {
+            margin-left: 10px;
+        }
+
+        input[type=email], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            transition: 0.5s;
+            outline: none;
+        }
+
+        input[type=email]:focus, textarea:focus {
+            border: 3px solid #555;
+        }
+
+        input[type=submit] {
+            background: #666655;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+    </style>
+
+    <script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+</head>
+<body>
+<header id="header">
+    <h1> <center>  <img src="Logo.png" alt="This logo is the Italian band of Rock and Roll" height="150px" width="500px"></center> </h1>
+    <p>"Claro de Luna"</p>
+</header>
+
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a class="Integrantes.html">Integrantes</a></li>
+        <li><a href="#">Fanbase</a></li>
+        <li><a href="#">Albumes</a></li>
+        <li class="menu__hamburger-icon">
+            <a  href="javascript:void(0);" onclick="myFunction()">
+                <i class="lni lni-menu"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div id="main-content-container">
+    <aside id="links-sidebar">
+        <br><br> <i>
+       <b>Sus redes sociales de Maneskin</b> 
+        <br> <br>
+        <a href="https://twitter.com/thisismaneskin">Twitter</a>
+
+        <br> <br> <br> <br>
+        <b>Cuentas personales de sus integrantes</b>
+        <br><br>
+        <a href="https://www.youtube.com/c/M%C3%A5neskinOfficial/videos>Youtube Oficial</a>
+        <br> <br>
+        Cuentas personales de los integrantes de Maneskin
+        <a href="https://www.instagram.com/ykaaar/feed/?hl=es">Damiano Davide (Vocalista)</a>
+        <br><br>
+        <a href="https://www.instagram.com/vicdeangelis/?hl=es">Victoria de Angelis (Bajista)</a>
+        <br><br>
+        <a href="https://www.instagram.com/ethaneskin/?hl=es">Ethan Torchio (Baterista)</a>
+        <br><br>
+        <a href="https://www.instagram.com/thomasraggi__/reels/">Thomas Raggi (Guitarrista)</a>
+        </i>
+    </aside>
+    <section id="main-content">
+        
+        
+
+        <h2>La historia de Maneskin</h2>
+        <p>La banda estaformada por cuatro muchachos de Roma: Damiano David voz principal, 
+            nacido el 8 de enero de 1999, Victoria de Angelis al bajo y también nacida el 
+            28 de abril de 2000, Thomas Raggi a la guitarra y nació el 18 de enero de 2001 
+            y Ethan Torchio a la batería y nacido el 8 de octubre de 2000. </p>
+            <img src="guapos.jpg" alt="Banda de rock Italiana" height="200px" width="500px">
+        <p> Una puesta en escena efectiva, con una imagen más que estudiada,
+            jugando con la ambigüedad sexual, todos vestidos en color rojo vino 
+            y con estética de grupos como Jane´s Addiction y un sonido rockero muy fresco.</p>
+        <p>Cantando en su idioma natal y con una química escénica indudable, se alzaron con 
+            el premio a pesar de cambiar uno de los versos de su canción triunfadora: 
+            Zitti e Buoni (Cállate y bien). Para su interpretación primera devolviendo 
+            el verso original y que está recogido en su último trabajo discográfico: 
+            Teatro de´Ira Vol I, cuando fueron proclamados vencedores. Un verso que 
+            hace referencia a cierta parte de la anatomía masculina. </p>
+
+             <p>Después de eso, todo ha ido rodado para Maneskin que están enfrascado en gira 
+                por toda europa e incluso ya han aparecido en el mítico Times Square de Nueva 
+                York y con su nuevo single: I wanna be your slave. Con él han llegado a número 
+                uno en las listas británicas algo que no se conseguía por parte de un artista
+                 italiano desde mucho tiempo atrás.</p>
+
+                 <br>
+                 <br>
+
+        <h2>El grupo Italiano que triunfó tras arrasar en Eurovision</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RVH5dn1cxAQ?start=24"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>De actuar en las calles de Roma a ganar Eurovisión. 
+            La banda de rock Måneskin acaba de otorgarle a Italia su 
+            tercer triunfo en la 65ª edición del festival europeo,
+             una edición muy especial marcada por la pandemia y cuya 
+            final acaba de celebrarse en el Ahoy de Róterdam. 
+            Los ganadores del último Festival de Sanremo  competían con Zitti 
+            e Buoni, un canto a la singularidad y diferencia frente a lo socialmente establecido.</p>
+        <p> Favoritos en Róterdam desde 
+            los primeros ensayos, Måneskin, ataviados con petos con tirantes estilo rockero, genderless, 
+            gargantilla y ojos ahumados, 
+            han traído a Eurovisión un rock transgresor, insolente y reivindicativo.
+             La banda romana ha ganado el certamen con 524 puntos,
+             siendo primeros en el televoto (318 puntos) y cuartos en el jurado (206 puntos).</p>
+<br> <br>
+        <h2>Trayectoria</h2>
+
+
+        <p>De ahí a las calles de Roma donde tocaban casi al “aire” sus temas. 
+            Luego llegó su gran oportunidad cuando se presentaron al X-factor Italia en 2017 
+            quedando en segundo puesto del concurso y dándoles la posibilidad de grabar un primer EP. 
+            Este disco vio la luz con el título de Chosen y que mezcla estilos desde el rock hasta el 
+            reggae con la forma particular de rapear de Damiano que le otorga una de sus características 
+            más destacadas.
+         <p> 
+            De este EP podríamos resaltar dos temas: El que da título, Chosen y Beggin que se han 
+            convertido ahora cuando han sido redescubiertos por el público mundial, en otro himno del grupo.
+         </p>   
+         <p> En 2018 publican su primer disco largo: Il Ballo della Vita con el que consiguen notoriedad 
+            aún mayor en su país natal con canciones como: Torna a casa o Le parole lontane; 
+            que ahora también son temas muy conocidos </p>
+            <br> <br>
+            <h2>Festivales</h2>
+            <p>Pero fue este año, el 2021 cuando todo vino a cambiar para Maneskin cuando
+                 se presentaron a la 71ª edición del Festival de San Remo con su tema Zitti
+                  e Buoni, proclamándose ganadores. </p>
+
+             <p>  De ahí a ser elegidos para representar a Italia en Eurovisión un paso y con su 
+                segundo LP, publicado en el mismo mes de Marzo, bajo el título de
+                 : Teatro d´Ira Vol. 1.; ya estaban todos los elementos para la mezcla perfecta
+                  y conseguir lo que ha venido después de la famosa noche del 22 de mayo donde incluso 
+                  se acusó a Damiano de haber consumido drogas en pleno directo. </p>
+                
+             <p>Inmediatamente aparecían en primer lugar en youtube sus videos y son fáciles
+                 de encontrar. Incluso los primeros cuando casi adolescentes grababan temas 
+                 caseros hasta llegar al último que han estrenado estos días con la canción
+                  que los ha llevado a la fama en una plaza tan complicada como lo es el 
+                  Reino Unido: I wanna be your slave. </p>
+
+                  <img src="Damiano.jpeg" alt="Banda de rock Italiana" height="500px" width="500px">
+                
+             <p>  Video que está levantando más de una ampolla en varios sectores por su 
+                contenido ambiguo, sexualmente hablando y por su estética. Pero aún así, 
+                Maneskin están en boca de muchos youtubers que reaccionan a sus presentaciones y canciones. </p>
+                
+             <p> También están visitando festivales, los que se pueden celebrar, 
+                en lugares tan lejanos como Suecia donde los locales intentaban 
+                cantar Zitti e Buoni en un italiano un tanto escandinavo. </p>
+                
+             <p>   La historia de estos 4 jóvenes de Roma parece que ha despegado, 
+                desde las calles de la ciudad de Rómulo y Remo para el resto del
+                 mundo y esperamos que la Luz de la luna les siga iluminando el 
+                 camino que han comenzado a andar.</p>
+                
+             <p>    Como dicen en su letra: “La gente parla…” y eso es evidente en su caso. </p>
+                
+             <p>   Eso también ha permitido que otras leyendas del ámbito del rock hayan 
+                descubierto su talento.
+                <br><br><br><br><br>
+
+                
+             </p>
+    </section>
+</div>
+
+<footer id="footer">
+    <div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-github-original social__icon"></i></span>
+                <span class="social__icon-handler"> <a href="https://github.com/EsmeraldaCor"> EsmeCor </a> </span>
+            </div>
+
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-linkedin-original social__icon"></i></span>
+                <span class="social__icon-handler">
+                    <a href="https://twitter.com/BetyCordova5?t=1sI103cxrNirqxvBiyBlxQ&s=09"> Esmeralda Cordova </a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="footer__more-sites footer__section">
+        <h2>Otros de mis sitios</h2>
+        <i class="lni lni-twitter"><a href="https://twitter.com/BetyCordova5?t=1sI103cxrNirqxvBiyBlxQ&s=09">Twitter</a></i>
+        <br><br>
+
+        <i class="lni lni-youtube"><a href="https://www.youtube.com/channel/UCpoepDtPWyCTcPWBnRKwPYg">Youtube</a></i>
+        
+    
+    </div>
+</footer>
+</body>
+</html>
+La paura del buio
+<script>
+    function myFunction() {
+        const navigationBar = document.getElementById("navigation-bar");
+        if (navigationBar.className === "navigation-bar") {
+            navigationBar.className += " responsive";
+        } else {
+            navigationBar.className = "navigation-bar";
+        }
+    }
+</script>
+Todos los derechos reservados
+<li class="menu__hamburger-icon">
+    <a  href="javascript:void(0);" onclick="myFunction()">
+        <i class="lni lni-menu"></i>
+    </a>
+</li>
+</html>
